@@ -1,10 +1,21 @@
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 #txt{
-    width: 90vw;
+    padding: 20px;
+    margin: 20px;
     outline: none;
     font-size: 25px;
     border-radius: 10px;
     border: 0.5px solid red;
-   
-    
 }
 
+#resultado{
+    margin: 60px;
+    letter-spacing: 2px;
+}

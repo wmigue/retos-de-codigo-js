@@ -2,6 +2,8 @@
 
 
 let txt = document.getElementById("txt")
+let resultado = document.querySelector("#resultado")
+
 txt.addEventListener("input", (e) => {
 
     let texto = e.target.value
@@ -17,7 +19,15 @@ txt.addEventListener("input", (e) => {
         acc.find(x=>x.word===word).total++
         return acc
     },[])
+    
     console.log(result)
+    let res=""
+    for(let e of result){
+        res+=`<b>${e.word}</b>: ${e.total} repeticiones. <br>`
+    }
+    resultado.innerHTML=res
+
+    
 
 })
 
