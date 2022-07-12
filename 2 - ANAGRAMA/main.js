@@ -1,5 +1,6 @@
-let res = ""
+
 const isAnagrama = (array, buscada) => {
+    let res = ""
     array = array.split(",")
     //console.log(array)
     buscada = buscada.toUpperCase()
