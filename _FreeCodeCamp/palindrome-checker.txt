@@ -1,0 +1,15 @@
+function palindrome(texto) {
+    texto=texto.replace(/[$\.\(\_\-\:\/¿\?,;¡!]/g, " ").trim().split(" ").join("").toUpperCase()
+
+
+    const r=texto.split("").reverse().join("");
+    if(r==texto){
+       return true
+     }else{
+       return false;
+     }
+
+    
+}
+
+palindrome("eye");
